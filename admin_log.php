@@ -23,14 +23,15 @@ if(isset($_POST['submit'])){
 <head>
   <title>Admin</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/login.css">
 </head>
 <body class="body_first" >
-  <div id="header">
-    <div class="admin_class"><a href="student_log.php">User</a></div>
+  <!-- <div id="header"> -->
+    <!-- <div class="admin_class"><a href="student_log.php">User</a></div> -->
     <!-- <a style="color:white" > <h1><marquee behavior="scroll" direction="left">Welcome to Admin Login Page </marquee> </h1></a> -->
-    <a style="color:white" > <h2>Welcome to Admin Login Page </h2></a>
-  </div>
-  <div class="container" >
+    <!-- <a style="color:white" > <h2>Welcome to Admin Login Page </h2></a> -->
+  <!-- </div> -->
+  <!-- <div class="container" >
     <div >
       <div id="container_form">
       <h2 style="padding:10px;border-bottom:2px solid rgb(17, 143, 143);color:rgb(17, 143, 143);"> Admin Login</h2>
@@ -42,12 +43,52 @@ if(isset($_POST['submit'])){
           <input type="password" id="password" name="password" placeholder="Enter Password" required>
     
           <input id="submit_shadow" type="submit" name="submit" value="Login">
-          <label style="color:red;display:inline;margin-left:5px"><?php if(isset($_POST['submit'])){echo $error_mgs;}?></label>
+          <label style="color:red;display:inline;margin-left:5px">
+            <?php 
+            // if(isset($_POST['submit'])){echo $error_mgs;}
+            ?></label>
           <button class="btn_home" ><a href="index.php">Back Home Page </a></button>
         </form>
       </div>
     </div>
-  </div>
+  </div> -->
+
+
+  <div class="wrapper">
+    <form action="student_log.php" method="POST">
+      <!-- login form -->
+      <h1>Admin Login</h1>
+      <div class="input-box">
+        <input type="text" name="s_id" id="username" placeholder="Enter Your Student ID" required>
+        <i class='bx bxs-user'></i>
+      </div>
+      <div class="input-box">
+        <input type="password" name="password" id="password" placeholder="Password" required>
+        <i class='bx bxs-lock-alt'></i>
+      </div>
+      <div class="remember-forgot">
+        <label for="">
+          <input type="checkbox">Remember Me
+        </label>
+        <a href="#">Forgot Password</a>
+      </div>
+      <button type="submit" name="submit" value="login" class="btn">Login</button>
+
+      <label style="color:red;display:inline;margin-left:10px;margin-top:10px">
+              <?php 
+              if (isset($_POST['submit'])) {
+                  echo $error_mgs;} 
+                  ?>
+                  </label>
+
+      <div class="register-link">
+        <p>Don't have an account?
+          <a href="student_signup.php" class="reg" >Register</a><br>
+          <a href="index.php" class="reg">Back to Home Page</a>
+        </p>
+
+
+        
   <script>
     function validateForm() {
       let email = document.getElementById("username").value;
@@ -69,7 +110,7 @@ if(isset($_POST['submit'])){
     }
   </script>
  <?php
-  include("footer.php");
+  // include("footer.php");
   ?>
 </body>
 </html>
