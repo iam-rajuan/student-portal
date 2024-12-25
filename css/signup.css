@@ -1,0 +1,95 @@
+/* header */
+#header1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px;
+    /* background: #e3e6f3; */
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+/* #header1 a{
+    width: 10px;
+    height: 10px;
+} */
+
+#header1 img {
+    margin-left: 0px;
+    padding-left: 0px;
+    height: 5rem;
+    /* Adjust height as needed */
+    width: auto;
+    /* Maintains the aspect ratio */
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: #088178;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    position: absolute;
+    content: '';
+    background: #088178;
+    width: 30%;
+    height: 2px;
+    bottom: -4px;
+    left: 20px;
+
+}
+
+
+/* container of sign up form */
+
+#container_form {
+    max-width: 320px;
+    margin: 40px auto;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.container_form {
+    max-width: 720px;
+    margin: 40px auto;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 55px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+
+.container_form:hover {
+    box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.13);
+
+}

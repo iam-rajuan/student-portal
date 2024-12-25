@@ -90,19 +90,11 @@ body {
   padding: 0;
   background-color: #f1f1f1;
 }
-#header {
-  /* background-color: #062944; */
-  background-color: #abb3ba;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-  border-radius: 15px;
-}
 
-.admin_class {
+#header{
   /* background-color: #062944; */
   background-color: #abb3ba;
-  color: #fff;
+  /* color: #fff; */
   padding: 20px;
   text-align: center;
   border-radius: 15px;
@@ -114,12 +106,18 @@ body {
     font-weight: bold; */
       
 }
+#header-signup{
+  display: flex;
+}
 
 .admin_class {
   display: block;
   position: absolute;
   right: 30px;
-  top: 28px;
+  top: 28px; 
+  display: flex;
+  
+
 }
 
 .admin_class a {
@@ -298,7 +296,7 @@ input[type="submit"]:hover {
   background-color: #45a049;
 }
 
-#container_form {
+/* #container_form {
   max-width: 320px;
   margin: 40px auto;
   background-color: #fff;
@@ -312,9 +310,13 @@ input[type="submit"]:hover {
   margin: 40px auto;
   background-color: #fff;
   border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 55px rgba(0, 0, 0, 0.1);
   padding: 20px;
 }
+
+.container_form:hover{
+  
+} */
 
 /*Reset Password*/
 .password-change-section {
@@ -566,14 +568,13 @@ button .btn_search {
 }
 
 /*Font Page*/
-.body_first{
+/* .body_first{
 background-image: conic-gradient(rgba(32, 39, 132, 0.872), rgba(65, 117, 138, 0.543), rgba(184, 61, 176, 0.936)); 
-/* background-image: url("https://media3.giphy.com/media/doXBzUFJRxpaUbuaqz/giphy.gif?cid=ecf05e47tnfhjh0lx85djen7gvd23j7a9xw532au3zse8j0c&ep=v1_gifs_related&rid=giphy.gif&ct=g");  */
 background-image: url(gub.jpg); 
  background-size: cover;
 background-repeat: no-repeat;
-/* background: url(gub.jpg) no-repeat; */
-}
+background: url(gub.jpg) no-repeat;
+} */
 .body_fill {
   height: 445px;
   width: 100%;
@@ -831,14 +832,23 @@ a:active {
 
 .main-foot {
   border-radius: 15px;
-  background-color: #abb3ba;
+  /* background-color: #abb3ba;
   color: white;
   padding: 10px;
   text-align: center;
   position: fixed;
   width: 100%;
   bottom: 0;
-  font-size: xx-small;
+  font-size: xx-small; */
+
+  background-color: #004d00;
+  color: white; 
+  padding: 10px; 
+  text-align: center; 
+  position:initial;
+  width: 100%;
+  bottom: 0; 
+  opacity: 65%;
 }
 
 

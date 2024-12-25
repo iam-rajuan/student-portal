@@ -8,16 +8,13 @@ CREATE TABLE admin_info (
   admin_depart varchar(5) NOT NULL
 );
 
--- INSERT INTO admin_info (id, emp_id, name, email, admin_pass, Admin_position) 
--- VALUES
--- (1, 1001, 'Nuruzzaman and Utam', 'admin@gmail.com', 'admin', 'CSE'),
---  (2, 1001, 'uttam', 'uttamcse@gmail.com', 'uttamcse', 'Teacher'),
---  (3,1001,'Nurzaman','nurzamancse@gmail.com','nurucse','Teacher');
 INSERT INTO admin_info (id, emp_id, name, email, admin_pass, admin_depart)
 VALUES 
     (1, 1001, 'admin', 'admin@gmail.com', 'admin', 'CSE'),
-    (2, 1001, 'faculty1', 'faculty1@gmail.com', 'faculty', 'Teacher'),
-    (3, 1001, 'faculty2', 'faculty2@gmail.com', 'faculty', 'Teacher');
+    (2, 1002, 'Md. Rajuan Hossen', rajuan.official@gmail.com', 'admin', 'Teacher'),
+    (3, 1003, 'Hasebul Hasan', 'hasebul@gmail.com', 'admin', 'admin'),
+    (4, 1004, 'Md. Rajuan Hossen', rajuan.official@gmail.com', 'teacher', 'Teacher'),
+    (5, 1005, 'Humayra', 'humayra@gmail.com', 'teacher', 'Teacher');
 
 
 CREATE TABLE attendence (

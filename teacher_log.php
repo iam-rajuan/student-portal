@@ -26,10 +26,10 @@ if(isset($_POST['submit'])){
   <link rel="stylesheet" href="css/login.css">
 </head>
 <body class="body_first" >
-  <div id="header">
+  <!-- <div id="header"> -->
     <!-- <a style="color:white" > <h1><marquee behavior="scroll" direction="left">Welcome to Teacher Login Page </marquee> </h1></a> -->
-    <a style="color:white" > <h1>Welcome to Teacher Login Page </marquee> </h1></a>
-  </div>
+    <!-- <a style="color:white" > <h1>Welcome to Teacher Login Page </marquee> </h1></a> -->
+  <!-- </div> -->
   <!-- <div class="container" >
     <div >
       <div id="container_form">
@@ -50,11 +50,11 @@ if(isset($_POST['submit'])){
   </div> -->
 
   <div class="wrapper">
-      <form action="student_log.php" method="POST">
+      <form action="teacher_log.php" method="POST">
         <!-- login form -->
         <h1>Teacher Login</h1>
         <div class="input-box">
-          <input type="text" name="s_id" id="username" placeholder="Enter Your Student ID" required>
+          <input type="text" name="mail" id="username" placeholder="Enter Teacher Email" required>
           <i class='bx bxs-user'></i>
         </div>
         <div class="input-box">
