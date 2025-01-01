@@ -78,8 +78,8 @@ if(isset($_POST['submit'])){
         </label>
 
         <div class="register-link">
-          <p>Don't have an account?
-            <a href="student_signup.php" class="reg">Register</a><br>
+          <!-- <p>Don't have an account? -->
+            <!-- <a href="student_signup.php" class="reg">Register</a><br> -->
             <a href="index.php" class="reg">Back to Home Page</a>
           </p>
 
