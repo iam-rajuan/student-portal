@@ -53,7 +53,7 @@
       </div>
     </section>
     <h1>
-      <marquee behavior="scroll" direction="left">Welcome to student portal of Green University of Bangladesh. Admision open Fall_2024 . Reminder---Final Exam start 25 june 2024</marquee>
+      <marquee behavior="scroll" direction="left">Welcome to student portal of Green University of Bangladesh. Admision open Fall_2024 . Reminder---Final Exam start 30 Dec 2024</marquee>
     </h1>
   </header>
   <header style="color:black; top: 30px" id="header" class="admin_class">
