@@ -11,9 +11,9 @@ CREATE TABLE admin_info (
 INSERT INTO admin_info (id, emp_id, name, email, admin_pass, admin_depart)
 VALUES 
     (1, 1001, 'admin', 'admin@gmail.com', 'admin', 'CSE'),
-    (2, 1002, 'Md. Rajuan Hossen', rajuan.official@gmail.com', 'admin', 'Teacher'),
+    (2, 1002, 'Md. Rajuan Hossen', 'rajuan.official@gmail.com', 'admin', 'Teacher'),
     (3, 1003, 'Hasebul Hasan', 'hasebul@gmail.com', 'admin', 'admin'),
-    (4, 1004, 'Md. Rajuan Hossen', rajuan.official@gmail.com', 'teacher', 'Teacher'),
+    (4, 1004, 'Md. Rajuan Hossen', 'rajuan.official@gmail.com', 'teacher', 'Teacher'),
     (5, 1005, 'Humayra', 'humayra@gmail.com', 'teacher', 'Teacher');
 
 
